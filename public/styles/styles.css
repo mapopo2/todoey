@@ -1,0 +1,180 @@
+header,
+footer {
+   margin: auto;
+   width: 40%;
+   padding: 10px 0;
+}
+
+body {
+  color: #AE445A; 
+  font-family: 'Inter', sans-serif;
+  background-color: #FFF2CC;
+}
+
+/*---------box shadow and border style --------*/
+/* repeated code */
+
+.nav-item, .date, input.myInput, #items{
+  border-radius: 5px;
+  box-shadow: 4px 4px 3px #AE445A;
+}
+/*-----------------Title-------------------*/
+/* .title {
+  position: relative;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: centre; 
+  font-size: 30px;
+  font-weight: bold;
+ } */
+
+/*----------bootstrap-navbar-css------------*/
+
+.nav-item {
+  width: 10rem;
+  margin-left:40px;
+  margin-right:40px;
+  text-align: center; 
+  background-color: #FFC3A1;
+  
+}
+
+.nav-item:hover {
+  background-color: #ffd57a;
+}
+.navTitle {
+  font-size: 20px;
+}
+
+i {
+  margin-right: 10px;
+  color: #AE445A;
+}
+
+/*----------date---------------------------*/
+ .date {
+  width: 40%;
+  margin: auto auto 20px; 
+  padding: 4px 5px 2px;
+  background-color: #FA9884;
+ }
+
+ /* https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
+
+ h2 {
+  font-size: 30px;
+  text-align: center; 
+  font-weight: light;
+  color: white;
+ }
+
+ .arrow {
+  color: #AE445A; 
+ }
+
+ .arrow:hover {
+  color: #ffc23e;
+ }
+
+/*---------------Add to list input box----------------------*/
+
+ #addToList {
+  width: 40%;
+  margin: auto;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+input.myInput {
+  height: 50px;
+  width: 85%;
+  background-color: #FFC3A1;
+  border: none;
+  color: #AE445A;
+  font-size: 20px;
+}
+
+.myInput:hover {
+  background-color: #ffd57a;
+ }
+
+::placeholder {
+  color: #b77885d8;
+}
+
+ #add {
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  background-color: #FA9884;
+  border-radius: 50%;
+  border-color: transparent;
+  box-shadow: 3px 3px 2px #AE445A;
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+#add:hover {
+  background-color: #FFB000;
+} 
+
+/*---------------To do list section--------------------*/
+
+.box1 {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+#items {
+  margin: auto;
+  width: 40%;
+  background-color: #FFC3A1;
+}
+
+.toDo {
+  font-size: 20px;
+  padding: 20px 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px ;
+  /* text-align: center; */
+  
+}
+
+input[type=checkbox] {
+  /* USE inspect tool in chrome to help to find correct 
+  css selectors for elements - also see W3 SCHOOLS */
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+/* input[type="checkbox" i] {
+} */
+
+.toDo input:checked~.checkboxtext {
+  text-decoration: line-through;
+}
+
+#unList {
+    list-style-type: none;
+    padding: 20px 20px;
+  }
+
+
+/*---------------To do list section--------------------*/
+.footerTxt {
+  text-align: left;
+}
+
+.github {
+  color: #AE445A; 
+ }
+
+ .github:hover {
+  color: #FFB000; 
+ }

@@ -1,0 +1,78 @@
+<%- include("partials/header.ejs") %>
+
+<div class = "date">
+      <h2 > <%= locals.currentDate %>      
+      <a href="/work-tomorrow"><i class="fa-solid fa-lg fa-caret-right arrow"></i></a> 
+      </h2> 
+</div>
+
+<div id="addToList">
+
+      <form action="/work" method="post">
+            <input type="text" name = "listItemWork" class="myInput" placeholder=" What to do, what to do..." required>
+            <button type="submit" id = "add">+</button>
+      </form>
+
+   <!-- <span   nn onclick="newElement()" class="addBtn">Add</span> -->
+
+</div>
+<!-- jj -->
+      
+      
+<div class="box1">
+
+     
+      <div id="items">
+            
+            <ul id="unList">
+                  <% for(let i=0; i<workItems.length; i++) { %> 
+                  <li class = "toDo">
+                     <input type="checkbox" class="checker"> 
+                     <span class="checkboxtext"> <%= workItems[i];%> </span>
+                  </li>
+                  <% };%>  
+
+                     <!-- console.log(i); returns number, place of item in array
+
+                     console.log(items[i]);
+
+                     instead of returning a number it returns plain text, 
+                     string, of item in array. Now to try to test it
+                  -->
+                  <!-- 13/10/23 - remove button has been removed as a requirement on 
+                        the appbrewery course on udemy 
+
+                        <button type="submit" name = "removeFromList" class = "remove">x </button> -->
+                  
+                        <!-- for(let i=0; i>items.length; i--){}  -->   
+                        <!-- }; -->
+                 
+                  <li class = "toDo">
+                        <input type="checkbox" class="checker"> 
+                        <span class="checkboxtext">Loc guide finish</span>
+                        <!-- add span to add class to list item--> 
+                        
+                  </li>
+                  <li class = "toDo">
+                        <input type="checkbox" class="checker"> 
+                        <span class="checkboxtext">Emails</span>  
+                  </li>
+                  <li class = "toDo">
+                        <input type="checkbox" class="checker"> 
+                        <span class="checkboxtext">To do list finish</span>
+                  </li>
+                  <li class = "toDo">
+                        <input type="checkbox" class="checker"> 
+                        <span class="checkboxtext">Applications</span>
+                  </li>
+            </ul>
+      </div>
+      
+
+</div>
+
+
+
+
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,66 @@
+<%- include("partials/header.ejs") %>
+
+      <div class = "date">
+            <h2 > <%= locals.currentDate %> </h2> 
+      </div>
+
+      <div id="addToList">
+
+            <form action="/" method="post">
+                  <input type="text" name = "listItem" class ="myInput" placeholder=" What to do, what to do..." required >
+                  <!-- https://techstacker.com/stop-user-submitting-form-without-filling-required-fields/ -->
+                  <button type="submit" id = "add">+</button>
+            </form>
+      
+         <!-- <span   nn onclick="newElement()" class="addBtn">Add</span> -->
+      
+      </div>   
+      
+      <container class="box1">
+
+           
+            <div id="items">
+                  
+                  <ul id="unList">
+                        <% for(let i=0; i<items.length; i++) { %> 
+                        <li class = "toDo">
+                           <input type="checkbox" class="checker"> 
+                           <span class="checkboxtext"> <%= items[i];%> </span>
+                        </li>
+                        <% };%>  
+
+                        <li class = "toDo">
+                              <input type="checkbox" class="checker"> 
+                              <span class="checkboxtext">Meet George</span>
+                              <!-- add span to add class to list item--> 
+                              
+                        </li>
+                        <li class = "toDo">
+                              <input type="checkbox" class="checker"> 
+                              <span class="checkboxtext">Gym</span>  
+                        </li>
+                        <li class = "toDo">
+                              <input type="checkbox" class="checker"> 
+                              <span class="checkboxtext">Pay bills</span>
+                        </li>
+                        <li class = "toDo">
+                              <input type="checkbox" class="checker"> 
+                              <span class="checkboxtext">Groceries</span>
+                        </li>
+                  </ul>
+                  
+            </div>
+
+      </container>
+      
+
+<%- include("partials/footer.ejs") %>
+<!-- Step 3 Add Footer 
+https://www.w3schools.com/howto/howto_js_todolist.asp -->
+
+<!-- NOTES - PUT INTO BACK-END DEV PROJECT + MAKE NOTES FILE FOR THIS PROJECT
+      FLEXBOX DISPLAY IMPLEMENT - CSS 
+      TIDY EJS! 
+      DONE!
+      -->
+
