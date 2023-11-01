@@ -3,8 +3,6 @@ import bodyParser from "body-parser";
 
 import jsdom from "jsdom";
 
-//const jsdom = require("jsdom");
-
 const app = express();
 const port = 3000;
 const { JSDOM } = jsdom;
@@ -22,8 +20,6 @@ let today  = new Date();
 let year = today.getFullYear();
 let tomorrow = new Date(today);
 tomorrow.setDate(today.getDate() + 1); 
-//https://stackoverflow.com/questions/3552461/how-do-i-format-a-date-in-javascript
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
 
 let whatDayToday = today.toLocaleDateString("en-GB", options);
 let whatDaytomorrow = tomorrow.toLocaleDateString("en-GB", options);
@@ -39,8 +35,6 @@ app.get("/", (req, res) => {
      );
 
      console.log(today.toLocaleDateString("en-GB", options));
-    //https://stackoverflow.com/questions/3552461/how-do-i-format-a-date-in-javascript
-
 });
 
 app.post("/", (req, res) => {
