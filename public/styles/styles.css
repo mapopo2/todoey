@@ -62,8 +62,6 @@ i {
   background-color: #FA9884;
  }
 
- /* https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
-
  h2 {
   font-size: 30px;
   text-align: center; 
@@ -146,8 +144,6 @@ input.myInput {
 }
 
 input[type=checkbox] {
-  /* USE inspect tool in chrome to help to find correct 
-  css selectors for elements - also see W3 SCHOOLS */
   height: 20px;
   width: 20px;
   margin-right: 5px;
